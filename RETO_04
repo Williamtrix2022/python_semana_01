@@ -1,0 +1,10 @@
+#Haz una función calcular_descuento(precio, porcentaje) que devuelva el precio final con el descuento aplicado.
+
+def calcular_descuento(precio, porcentaje):
+    descuento = precio * (porcentaje / 100)
+    precio_final = precio - descuento
+    return precio_final
+precio = float(input("Ingrese el precio original: "))
+porcentaje = float(input("Ingrese el porcentaje de descuento: "))
+precio_final = calcular_descuento(precio, porcentaje)
+print(f"El precio final con el descuento aplicado es: {precio_final}")  
